@@ -1,5 +1,5 @@
 #Travis config files
-hello
+
 sudo: required
 services:
   - docker
@@ -8,4 +8,4 @@ before_install:
   - docker build -t brinthasivakami/reactdockertravis -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true brinthasivakami/reactdockertravis npm run test -- --coverage
+  - docker run -e CI=true brinthasivakami/reactdockertravi npm run test -- --coverage
